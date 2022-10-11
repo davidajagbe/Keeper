@@ -1,0 +1,160 @@
+:root{
+  --black:#222;
+  --yellow:#f5ba13;
+  --white:#fff;
+  --grey:#ccc;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: var(--black);
+  padding: 0 16px;
+
+}
+
+header {
+  background-color: var(--yellow);
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow:var(--black);
+}
+header .icons div{
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 3.5rem;
+  border-radius: .5rem;
+  background: var(--white);
+  color:var(--black);
+  font-size: 2rem;
+  margin-left: .3rem;
+  cursor: pointer;
+  text-align: center;
+}
+header .icons div:hover{
+  background: var(--black);
+  color:var(--white);
+}
+
+header h1 {
+  color: var(--white);
+  font-weight: 200;
+}
+
+.search-form{
+  position: absolute;
+  top:110%; right:-110%;
+  width: 5rem;
+  height:5rem;
+  background:var(--black);
+  border-radius: .5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+
+header .search-form.active{
+  right:2rem;
+  transition: .4s linear;
+}
+
+.search-form input{
+  height:100%;
+  width:100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color:var(--white);
+  padding:0 1.5rem;
+}
+
+.search-form label{
+  font-size: 2.2rem;
+  padding-right: 1.5rem;
+  color:var(--black);
+  cursor: pointer;
+}
+.search-form label:hover{
+  color:var(--grey);
+}  
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+footer p {
+  color: var(--grey);
+}
+.note {
+  background: var(--white);
+  border-radius: 7px;
+  box-shadow: 0 2px 5px var(--white);
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: var(--yellow);
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: var(--white);
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: var(--yellow);
+  color:var(--white);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
