@@ -1,5 +1,4 @@
 import React from "react";
-import SettingsIcon from '@material-ui/icons/Settings';
 
 
 
@@ -15,16 +14,16 @@ import SettingsIcon from '@material-ui/icons/Settings';
 
 function Header() {
 
-  var searchForm = document.body;
+  // var searchForm = document.body;
 
-  function searchBox(){
-    searchForm.classList.toggle('active')
-  }
+  // function searchBox(){
+  //   searchForm.classList.toggle('active')
+  // }
 
   return (
     <header>
       <h1>Keeper</h1>
-      <div className="icons">
+      {/* <div className="icons">
         <div className="fas fa-bars" id="menu-btn"></div>
         <div className="fas fa-search" id="search-btn" onClick={searchBox()}></div>
         <SettingsIcon className= "settings"/>
@@ -33,7 +32,7 @@ function Header() {
       <form action="" className="search-form">
         <input type="search" id="search-box" placeholder="search here..."/>
         <label for="search-box" className="fas fa-search"></label>
-      </form>
+      </form> */}
     </header>
   );
 }
