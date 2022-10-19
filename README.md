@@ -14,6 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+And if you want to check the demo app clink on this link https://keeper-note-app-temmy.netlify.app/
 
 ### `npm test`
 
