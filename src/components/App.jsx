@@ -23,6 +23,18 @@ function App() {
   return (
     <div>
       <Header />
+      <div className="note-image">
+        <div className="image">
+          <img src="../img/download.png" alt="react-immage" />
+        </div>
+        +
+        
+        <div className="image">
+        </div>
+        +
+        <div className="image">
+        </div>
+      </div>
       <CreateArea onAdd={addNote} />
       {notes.map((noteItem, index) => {
         return (

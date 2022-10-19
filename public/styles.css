@@ -17,11 +17,29 @@ html {
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: var(--black);
-  padding: 0 16px;
-
+  width: 100%;
+  /* background: url(https://media.giphy.com/media/RPHKv4VD4bthuO9NH0/giphy.gif); */
+  background: url(https://media.giphy.com/media/Y3wH0icDeRfaS8Of7l/giphy.gif);
+  /* padding: 0 16px; */
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover ;
+  min-height: 100vh;
+  position: relative;
 }
 
+.note-image img{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+}
+img{
+  flex-direction: column;
+  /* background: url(../src/img/download.png); */
+  width: 100%;
+}
 header {
   background-color: var(--yellow);
   margin: auto -16px;

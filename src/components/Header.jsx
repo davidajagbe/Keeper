@@ -1,5 +1,5 @@
 import React from "react";
-
+import HighlightIcon from '@mui/icons-material/Highlight';
 
 
   // let searchForm = document.body('.search-form');
@@ -22,7 +22,7 @@ function Header() {
 
   return (
     <header>
-      <h1>Keeper</h1>
+      <h1> <HighlightIcon/> Keeper</h1>
       {/* <div className="icons">
         <div className="fas fa-bars" id="menu-btn"></div>
         <div className="fas fa-search" id="search-btn" onClick={searchBox()}></div>
